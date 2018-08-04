@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-import "openzeppelin-solidity/contracts/token/ERC20/StandartToken.sol"
+import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 
 contract TutorialToken is StandardToken {
     string public name = "Tutorial Token";
@@ -10,6 +10,6 @@ contract TutorialToken is StandardToken {
 
     constructor() public {
         totalSupply_ = INITIAL_SUPPLY;
-        balances[masg.sender] = INITIAL_SUPPLY;
+        balances[msg.sender] = INITIAL_SUPPLY;
     }
 }
